@@ -16,7 +16,7 @@ class CartController < ApplicationController
 
     	line_item.update(line_item_total: (line_item.quantity * line_item.product.price))
 
-    	redirect_to root_url
+    	redirect_to view_order_path
 
     end
 
